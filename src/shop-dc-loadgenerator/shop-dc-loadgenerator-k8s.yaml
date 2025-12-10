@@ -47,7 +47,7 @@ spec:
               cpu: "50m"
       containers:
         - name: load-generator
-          image: ghcr.io/splunk/opentelemetry-demo/shop-dc-loadgenerator:1.0.2
+          image: ghcr.io/geoffhigginbottom/splunk-otel-demo/shop-dc-loadgenerator:test
           args: ["--url", "http://shop-dc-shim:8070", "--mode", "continuous", "--tpm", "25", "--duration", "0"]
           resources:
             limits:
