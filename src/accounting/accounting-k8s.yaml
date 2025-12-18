@@ -28,7 +28,7 @@ spec:
       serviceAccountName: opentelemetry-demo
       containers:
       - name: accounting
-        image: ghcr.io/splunk/opentelemetry-demo/otel-accounting:1.4.0
+        image: ghcr.io/geoffhigginbottom/splunk-otel-demo/otel-accounting:1.4.0-test
         imagePullPolicy: Always
         env:
         - name: OTEL_SERVICE_NAME
